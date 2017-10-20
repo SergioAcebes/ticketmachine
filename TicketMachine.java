@@ -42,7 +42,7 @@ public class  TicketMachine
     */
    public void vaciarMaquina()
     {
-        balance = 0;
+        total= 0;
     }
     /**
      * Return the price of a ticket.
