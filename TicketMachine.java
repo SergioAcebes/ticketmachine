@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  */
-public class TicketMachine
+public class  TicketMachine
 {
     // The price of a ticket from this machine.
     private int price;
@@ -17,6 +17,7 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -74,5 +75,19 @@ public class TicketMachine
         total = total + balance;
         // Clear the balance.
         balance = 0;
+
+    }
+    
+    public void showPrice()
+    {
+        System.out.println("The Price Of A Ticket Is "+ price + " Cents");
+
+    }
+    
+    public int getTotal()
+    {
+        return total;
     }
 }
+
+
